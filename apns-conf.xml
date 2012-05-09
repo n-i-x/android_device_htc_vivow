@@ -19,14 +19,32 @@
 
 <!-- use empty string to specify no proxy or port -->
 <!-- This version must agree with that in apps/common/res/apns.xml -->
-<apns version="7">
-  <apn carrier="Verizon" 
-	   mcc="310" 
-	   mnc="012" 
-	   apn="internet" 
-	   user="*" 
-	   password="*" 
-	   server="*" 
-	   mmsc="http://mms.vtext.com/servlets/mms" 
-	   type="default,supl,mms" />
+
+<?xml version="1.0" encoding="utf-8"?>
+<apns version="8">
+  <apn carrier="Verizon"
+   mcc="310"
+   mnc="004"
+   apn=""
+   user="*"
+   server="*"
+   password="*"
+   mmsc="http://mms.vtext.com/servlets/mms"
+  />
+  <apn name="Production" 
+   numeric="310012" 
+   mcc="310" 
+   mnc="012" 
+   apn="1" 
+   user="null" 
+   server="null" 
+   password="null" 
+   proxy="null" 
+   port="" 
+   mmsproxy="" 
+   mmsport="" 
+   mmsprotocol="2.0" 
+   mmsc="http://mms.vtext.com/servlets/mms" 
+   type="mms" 
+  />
 </apns>
